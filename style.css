@@ -22,6 +22,11 @@ header div{
   display: flex;
   border-radius: 50%;
   padding: 4px;
+  transition: transform .3s;
+}
+
+header div:hover{
+  transform: scale(1.1);
 }
 
 header img{
@@ -51,7 +56,7 @@ main{
   width: 90%;
   display: grid;
   gap: 24px;
-  margin: auto;
+  margin: 32px auto;
   padding-top: 20px;
 }
 
