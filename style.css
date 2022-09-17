@@ -1,0 +1,190 @@
+
+body *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+}
+
+body{
+  background-image: url(./images/fundo\ 4.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header div{
+  margin: auto;
+  width: 120px;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  display: flex;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+header img{
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h1 { 
+  box-shadow: .0em 0 0 #05ffa3;
+  margin-bottom: -20px;
+  /*margin: 2rem 1rem;*/
+  width: 20ch;
+  overflow: hidden;
+  color: #FFF;
+  white-space: nowrap;
+  animation: caret .5s step-end infinite alternate,
+  type 5s steps(23, end)
+}
+
+main{
+  max-width: 580px;
+  width: 90%;
+  display: grid;
+  gap: 24px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+section {
+  color: white;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top: 4px;
+  border-radius: 10px;
+}
+
+section div {
+  background-color: #2A2634;
+  border-radius: 8px;
+  padding: 24px 32px 32px 32px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+section ul{
+  gap: 16px;
+}
+
+.button{
+  padding-left: 80px;
+}
+
+ul li button:nth-child(1):hover{
+  animation: person;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+ul li button:nth-child(2):hover{
+  animation: person;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+ul li button:nth-child(3):hover{
+  animation: person;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+ul button{
+  border: 0;
+  border-radius: 4px;
+  background-color: rebeccapurple;
+  padding: 14px 32px 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.contact{
+  padding-left: 120px;
+}
+
+/* animation */
+
+header div{
+  animation: fromTop .7s .2s backwards;
+}
+
+main section {
+  animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: 0;
+}
+
+main section:nth-child(2) {
+  animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+  animation-delay: .8s;
+}
+
+@keyframes fromTop {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from{
+    opacity: 0;
+    transform: translatey(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+
+@keyframes person {
+  from{
+      transform: scale(1);
+  }
+
+  to{
+      transform: scale(1.05);
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+}
+@keyframes caret { 
+  to { 
+    box-shadow: .1em 0 0 transparent;
+  }
+}
